@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake water gun game</title>
+</head>
+<body>
+    <script>
+        let u = prompt("Enter snake,water or gun");
+        let ui = u.toLowerCase();
+        let random = Math.floor(Math.random()*3);
+        let r1 = ['snake','water','gun'][random];
+        
+
+        if(ui === r1){
+            alert("Draw");
+            console.log("Draw");
+        }
+        else if(ui === 'snake' && r1 === 'water'){
+            alert("You win");
+            console.log("You win");
+        }
+        else if(ui === 'gun' && r1 === 'snake'){
+            alert("You win");
+            console.log("You win");
+        }
+        else if(ui === 'water' && r1 === 'gun'){
+            alert("You win");
+            console.log("You win");
+        }
+
+        else if(r1 === 'snake' && ui === 'water'){
+            alert("Computer win");
+            console.log("Computer win");
+        }
+        else if(r1 === 'gun' && ui === 'snake'){
+            alert("Computer win");
+            console.log("Computer win");
+        }
+        else if(r1 === 'water' && ui === 'gun'){
+            alert("Computer win");
+            console.log("Computer win");
+        }
+        else{
+            alert("Please enter snake, water and gun");
+        }
+        console.log("Computer input is :",r1);
+        console.log("You entered :",ui);
+ </script>
+</body>
+</html>
